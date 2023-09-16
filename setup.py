@@ -9,7 +9,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.0.1'
+VERSION = '0.0.6'
 DESCRIPTION = 'Telegrapi (Telegram Api) is a package for using Telegram network within Python.'
 LONG_DESCRIPTION = 'Telegrapi (Telegram Api) is a package for using Telegram network within Python.'
 
@@ -22,10 +22,11 @@ setup(
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description=long_description,
-    packages=find_packages(where='telegrapi'),
-    package_dir={"": "telegrapi"},
-    install_requires=['dotenv'],
+    packages=find_packages(),
+    #package_dir={"": "telegrapi"},
+    install_requires=[],
     license='MIT',
+    license_files = ('LICENSE',),
     url='https://github.com/kunthet/telegrapi',
     keywords=['python', 'telegram', 'bot', 'api', 'light', 'simple'],
     
@@ -40,7 +41,7 @@ setup(
     ],
     
     extras_require={
-        "dev": ["pytest>=7.0", "twine>=4.0.2"]
+        "dev": ["pytest>=7.0", "twine>=4.0.2", 'dotenv']
     },
     
     python_requires=">=3.9"

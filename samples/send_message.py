@@ -25,5 +25,5 @@ if __name__ == '__main__':
     
     # to send text message into channel
     message = json.dumps(result, ensure_ascii=False, indent=4)
-    result = channel.message(result).send()
+    result = channel.message(message).send()
     print(result)
