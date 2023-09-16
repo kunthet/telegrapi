@@ -1,3 +1,4 @@
 # -*- coding: utf-8 -*-
 
-from telegrapi import Chat, Telegram, Method
+# from . import Chat, Telegram, Method
+from telegrapi.api import Chat, TEngine, Method

@@ -24,9 +24,9 @@ setup(
     long_description=long_description,
     packages=find_packages(where='telegrapi'),
     package_dir={"": "telegrapi"},
-    install_requires=[],
+    install_requires=['dotenv'],
     license='MIT',
-    url='https://github.com/kunthet/telegrapi.git',
+    url='https://github.com/kunthet/telegrapi',
     keywords=['python', 'telegram', 'bot', 'api', 'light', 'simple'],
     
     classifiers=[
