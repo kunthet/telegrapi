@@ -9,7 +9,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.0.6'
+VERSION = '1.0.0'
 DESCRIPTION = 'Telegrapi (Telegram Api) is a package for using Telegram network within Python.'
 LONG_DESCRIPTION = 'Telegrapi (Telegram Api) is a package for using Telegram network within Python.'
 
